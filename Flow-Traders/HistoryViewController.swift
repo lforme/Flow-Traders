@@ -35,7 +35,11 @@ class HistoryViewController: UIViewController {
     
     var dataSource: [HistoryModel] = [] {
         didSet {
-            
+            if dataSource.count != 0 {
+                tableView.backgroundView = nil
+            } else {
+                tableView.backgroundView = emptyView
+            }
         }
     }
     

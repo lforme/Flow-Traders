@@ -17,6 +17,7 @@ struct FileContent {
         -m 提醒我喝水 \n
         如何查看任务:
         history \n
+        clearall 删除所有记录
         """,
         "2": """
         请输入任务名称:
