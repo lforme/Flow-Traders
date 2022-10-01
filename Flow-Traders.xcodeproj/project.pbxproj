@@ -35,6 +35,7 @@
 		7A5E425F28E80A7800C650E8 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E425E28E80A7800C650E8 /* EmptyView.xib */; };
 		7A5E426128E84F7800C650E8 /* HtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E426028E84F7800C650E8 /* HtmlParser.swift */; };
 		7A5E426328E85BD300C650E8 /* AtomicInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E426228E85BD300C650E8 /* AtomicInteger.swift */; };
+		7AEE452E28E885B100FC27CC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE452D28E885B100FC27CC /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		7A5E425E28E80A7800C650E8 /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		7A5E426028E84F7800C650E8 /* HtmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlParser.swift; sourceTree = "<group>"; };
 		7A5E426228E85BD300C650E8 /* AtomicInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInteger.swift; sourceTree = "<group>"; };
+		7AEE452D28E885B100FC27CC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BE1C02E81476AB5F353205B8 /* Pods-Flow-Traders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flow-Traders.debug.xcconfig"; path = "Target Support Files/Pods-Flow-Traders/Pods-Flow-Traders.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +168,7 @@
 				7A5E425628E7E93B00C650E8 /* HistoryModel.swift */,
 				7A5E426028E84F7800C650E8 /* HtmlParser.swift */,
 				7A5E426228E85BD300C650E8 /* AtomicInteger.swift */,
+				7AEE452D28E885B100FC27CC /* Reachability.swift */,
 			);
 			path = Terminal;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				7A5E425728E7E93B00C650E8 /* HistoryModel.swift in Sources */,
 				7A5E423F28E6C3C200C650E8 /* TerminalLexer.swift in Sources */,
 				7A5E424728E6D13E00C650E8 /* FileContent.swift in Sources */,
+				7AEE452E28E885B100FC27CC /* Reachability.swift in Sources */,
 				7A5E424928E6D26400C650E8 /* TextView+Ex.swift in Sources */,
 				7A5E425A28E7EE1100C650E8 /* HisotryCell.swift in Sources */,
 				7A5E421F28E6951A00C650E8 /* AppDelegate.swift in Sources */,

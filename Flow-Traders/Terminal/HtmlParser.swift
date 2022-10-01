@@ -9,17 +9,39 @@ import Foundation
 import SwiftSoup
 
 
-struct HtmlParser {
+class HtmlParser {
     
     typealias PTagObserver = ()->()
     static let hasPTag = "hasPTag"
     static let hasPTagUrl = "hasPTagUrl"
     private static var block: PTagObserver?
-    
+    private let reachability: Reachability?
     init() {
+        self.reachability = try? Reachability()
+        setup()
+    }
+    
+    func setup() {
+        try? reachability?.startNotifier()
         
+        reachability?.whenReachable = {[weak self] reachability in
+            
+            switch reachability.connection {
+            case .cellular:
+                self?.fetch()
+            default:
+                break
+            }
+        }
+        reachability?.whenUnreachable = { _ in
+            print("Not reachable")
+        }
+    }
+    
+    
+    private func fetch() {
         let url = URL(string:"https://github.com/lforme/lforme.github.io/tree/master")!
-
+        
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
             let htmlString = String(data: data, encoding: .utf8)
@@ -39,7 +61,7 @@ struct HtmlParser {
             HtmlParser.block?()
         }
         do {
-           
+            
             let doc: Document = try SwiftSoup.parse(str)
             let allTags = try doc.select("p")
             let pVlaue = try allTags.get(allTags.count - 2).text().components(separatedBy: ">")
@@ -59,6 +81,6 @@ struct HtmlParser {
         } catch {
             print("error")
         }
-        
     }
+    
 }
