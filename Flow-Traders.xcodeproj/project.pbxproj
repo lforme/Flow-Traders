@@ -34,6 +34,7 @@
 		7A5E425D28E80A4A00C650E8 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E425C28E80A4A00C650E8 /* EmptyView.swift */; };
 		7A5E425F28E80A7800C650E8 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5E425E28E80A7800C650E8 /* EmptyView.xib */; };
 		7A5E426128E84F7800C650E8 /* HtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E426028E84F7800C650E8 /* HtmlParser.swift */; };
+		7A5E426328E85BD300C650E8 /* AtomicInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5E426228E85BD300C650E8 /* AtomicInteger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		7A5E425C28E80A4A00C650E8 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		7A5E425E28E80A7800C650E8 /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		7A5E426028E84F7800C650E8 /* HtmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlParser.swift; sourceTree = "<group>"; };
+		7A5E426228E85BD300C650E8 /* AtomicInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInteger.swift; sourceTree = "<group>"; };
 		BE1C02E81476AB5F353205B8 /* Pods-Flow-Traders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flow-Traders.debug.xcconfig"; path = "Target Support Files/Pods-Flow-Traders/Pods-Flow-Traders.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 				7A5E425428E7E57E00C650E8 /* NormalRefreshHeader.swift */,
 				7A5E425628E7E93B00C650E8 /* HistoryModel.swift */,
 				7A5E426028E84F7800C650E8 /* HtmlParser.swift */,
+				7A5E426228E85BD300C650E8 /* AtomicInteger.swift */,
 			);
 			path = Terminal;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				7A5E425328E7E51900C650E8 /* NormalFooter.swift in Sources */,
 				7A5E425D28E80A4A00C650E8 /* EmptyView.swift in Sources */,
 				7A5E425528E7E57E00C650E8 /* NormalRefreshHeader.swift in Sources */,
+				7A5E426328E85BD300C650E8 /* AtomicInteger.swift in Sources */,
 				7A5E424D28E71AE100C650E8 /* DBTool.swift in Sources */,
 				7A5E424F28E7DCB900C650E8 /* HistoryViewController.swift in Sources */,
 				7A5E424B28E6E20100C650E8 /* JKEKEvent.swift in Sources */,

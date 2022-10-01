@@ -13,6 +13,7 @@ struct HtmlParser {
     
     typealias PTagObserver = ()->()
     static let hasPTag = "hasPTag"
+    static let hasPTagUrl = "hasPTagUrl"
     private static var block: PTagObserver?
     
     init() {
@@ -41,13 +42,18 @@ struct HtmlParser {
            
             let doc: Document = try SwiftSoup.parse(str)
             let allTags = try doc.select("p")
-            let pVlaue = try allTags.get(allTags.count - 2).text()
-            if pVlaue == "我？？？？" {
+            let pVlaue = try allTags.get(allTags.count - 2).text().components(separatedBy: ">")
+            
+            if pVlaue.first == "我？？？？" {
                 UserDefaults.standard.set(true, forKey: HtmlParser.hasPTag)
             } else {
                 UserDefaults.standard.set(false, forKey: HtmlParser.hasPTag)
+                UserDefaults.standard.set("", forKey: HtmlParser.hasPTagUrl)
             }
-    
+            if let url = pVlaue.last {
+                UserDefaults.standard.set(url, forKey: HtmlParser.hasPTagUrl)
+            }
+            
         } catch Exception.Error(let type, let message) {
             print(message, type)
         } catch {

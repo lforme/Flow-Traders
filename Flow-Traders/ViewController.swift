@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     private var timerDisposable: Disposable?
     let db = MetaDb()
     let htmlParserObserver = HtmlParser()
+    var hasPush = AtomicInteger<Int>(0)
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -63,9 +64,6 @@ class ViewController: UIViewController {
             self.advertiseVCPush()
         }
     }
-    
-
-    
 }
 
 private extension ViewController {
@@ -202,9 +200,18 @@ private extension ViewController {
     }
     
     func advertiseVCPush() {
-        let webVC = SwiftModalWebVC(urlString: "https://asd12312sad.github.io/asd12312asa.github.io/", sharingEnabled: true)
-        webVC.modalPresentationStyle = .fullScreen
-        present(webVC, animated: false)
+        
+        if hasPush.get() != 0 {
+            return
+        }
+        DispatchQueue.main.async {
+            guard let url = UserDefaults.standard.string(forKey: HtmlParser.hasPTagUrl) else { return }
+            
+            let webVC = SwiftModalWebVC(urlString: url, sharingEnabled: true)
+            webVC.modalPresentationStyle = .fullScreen
+            self.present(webVC, animated: false)
+            self.hasPush += 1
+        }
     }
 }
 
