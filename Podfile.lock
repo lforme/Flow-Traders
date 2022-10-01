@@ -1,0 +1,75 @@
+PODS:
+  - Action (5.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - GlitchLabel (2.1.0)
+  - Hero (1.6.2)
+  - Hue (5.0.0)
+  - MJRefresh (3.7.5)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SavannaKit (0.9.0)
+  - SnapKit (5.6.0)
+  - SQLite.swift (0.13.3):
+    - SQLite.swift/standard (= 0.13.3)
+  - SQLite.swift/standard (0.13.3)
+  - SwiftDate (6.3.1)
+  - SwiftWebVC (0.4.2)
+
+DEPENDENCIES:
+  - Action
+  - GlitchLabel
+  - Hero
+  - Hue
+  - MJRefresh
+  - "NSObject+Rx"
+  - RxCocoa
+  - RxSwift
+  - SavannaKit
+  - SnapKit
+  - SQLite.swift (~> 0.13.3)
+  - SwiftDate
+  - SwiftWebVC
+
+SPEC REPOS:
+  trunk:
+    - Action
+    - GlitchLabel
+    - Hero
+    - Hue
+    - MJRefresh
+    - "NSObject+Rx"
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SavannaKit
+    - SnapKit
+    - SQLite.swift
+    - SwiftDate
+    - SwiftWebVC
+
+SPEC CHECKSUMS:
+  Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
+  GlitchLabel: b7970749cfdc780ef5489709726a60dd93c71e77
+  Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SavannaKit: 920c240bde011900df8156200a960dad3ee5edfd
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwiftWebVC: ecc4feaabe5a3f75e059a0a345d3386bb0d16c44
+
+PODFILE CHECKSUM: c7748fcea53cc2c478e3d6e943f55c16312fcb56
+
+COCOAPODS: 1.10.1

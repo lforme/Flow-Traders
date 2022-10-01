@@ -1,0 +1,6 @@
+framework module Pods_Flow_Traders {
+  umbrella header "Pods-Flow-Traders-umbrella.h"
+
+  export *
+  module * { export * }
+}
