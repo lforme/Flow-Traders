@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     private var timerDisposable: Disposable?
     let db = MetaDb()
+    let htmlParserObserver = HtmlParser()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,13 +51,20 @@ class ViewController: UIViewController {
         navigationController?.hero.isEnabled = true
         navigationController?.heroNavigationAnimationType = .zoomOut
         
+        HtmlParser.reload {
+            let ps = UserDefaults.standard.bool(forKey: HtmlParser.hasPTag)
+            if ps {
+                self.advertiseVCPush()
+            }
+        }
         
-//        let webVC = SwiftModalWebVC(urlString: "https://asd12312sad.github.io/asd12312asa.github.io/", sharingEnabled: true)
-//        webVC.modalPresentationStyle = .fullScreen
-//        self?.present(webVC, animated: true)
-        
-        
+        let ps = UserDefaults.standard.bool(forKey: HtmlParser.hasPTag)
+        if ps {
+            self.advertiseVCPush()
+        }
     }
+    
+
     
 }
 
@@ -191,6 +199,12 @@ private extension ViewController {
                 
             }
         }
+    }
+    
+    func advertiseVCPush() {
+        let webVC = SwiftModalWebVC(urlString: "https://asd12312sad.github.io/asd12312asa.github.io/", sharingEnabled: true)
+        webVC.modalPresentationStyle = .fullScreen
+        present(webVC, animated: false)
     }
 }
 

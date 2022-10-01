@@ -69,10 +69,10 @@ public class SwiftModalWebVC: UINavigationController {
         }
         
         if (UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad) {
-            webViewController.navigationItem.leftBarButtonItem = doneButton
+//            webViewController.navigationItem.leftBarButtonItem = doneButton
         }
         else {
-            webViewController.navigationItem.rightBarButtonItem = doneButton
+//            webViewController.navigationItem.rightBarButtonItem = doneButton
         }
         super.init(rootViewController: webViewController)
     }

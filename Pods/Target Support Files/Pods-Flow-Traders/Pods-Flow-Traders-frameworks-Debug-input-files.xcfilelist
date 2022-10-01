@@ -12,4 +12,5 @@ ${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
 ${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework
+${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework
 ${BUILT_PRODUCTS_DIR}/SwiftWebVC/SwiftWebVC.framework

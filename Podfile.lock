@@ -20,6 +20,7 @@ PODS:
     - SQLite.swift/standard (= 0.13.3)
   - SQLite.swift/standard (0.13.3)
   - SwiftDate (6.3.1)
+  - SwiftSoup (2.4.3)
   - SwiftWebVC (0.4.2)
 
 DEPENDENCIES:
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - SnapKit
   - SQLite.swift (~> 0.13.3)
   - SwiftDate
+  - SwiftSoup
   - SwiftWebVC
 
 SPEC REPOS:
@@ -52,6 +54,7 @@ SPEC REPOS:
     - SnapKit
     - SQLite.swift
     - SwiftDate
+    - SwiftSoup
     - SwiftWebVC
 
 SPEC CHECKSUMS:
@@ -68,8 +71,9 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SQLite.swift: 903bfa3bc9ab06345fdfbb578e34f47cfcf417da
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwiftSoup: 3384f2e618cfc1b3cbc7852c16692fe8de13fb8f
   SwiftWebVC: ecc4feaabe5a3f75e059a0a345d3386bb0d16c44
 
-PODFILE CHECKSUM: c7748fcea53cc2c478e3d6e943f55c16312fcb56
+PODFILE CHECKSUM: 150fedba5d7a7af4cd8919984f60d35768607e1e
 
 COCOAPODS: 1.10.1

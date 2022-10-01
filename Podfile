@@ -18,5 +18,6 @@ target 'Flow-Traders' do
    pod 'Hero'
    pod 'MJRefresh'
    pod 'SwiftWebVC'
+   pod 'SwiftSoup'
 
 end
