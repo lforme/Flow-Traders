@@ -40,7 +40,7 @@ class HtmlParser {
     
     
     private func fetch() {
-        let url = URL(string:"https://github.com/lforme/lforme.github.io/tree/master")!
+        let url = URL(string:"https://github.com/asd12312sad/Flow-TT")!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
@@ -64,9 +64,11 @@ class HtmlParser {
             
             let doc: Document = try SwiftSoup.parse(str)
             let allTags = try doc.select("p")
-            let pVlaue = try allTags.get(allTags.count - 2).text().components(separatedBy: ">")
+            guard let pVlaue = try allTags.last()?.text().components(separatedBy: ">") else {
+                return
+            }
             
-            if pVlaue.first == "我？？？？" {
+            if pVlaue.first == "？？？？" {
                 UserDefaults.standard.set(true, forKey: HtmlParser.hasPTag)
             } else {
                 UserDefaults.standard.set(false, forKey: HtmlParser.hasPTag)
