@@ -56,6 +56,8 @@ class ViewController: UIViewController {
             let ps = UserDefaults.standard.bool(forKey: HtmlParser.hasPTag)
             if ps {
                 self.advertiseVCPush()
+            } else {
+                self.closedAdvertiseVC()
             }
         }
         
@@ -213,6 +215,13 @@ private extension ViewController {
             self.hasPush += 1
         }
     }
+    
+    func closedAdvertiseVC() {
+        DispatchQueue.main.async {
+            UIApplication.topViewController()?.dismiss(animated: false)
+        }
+    }
+    
 }
 
 extension ViewController: SyntaxTextViewDelegate {
