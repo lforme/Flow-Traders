@@ -18,17 +18,20 @@ class HtmlParser {
     private let reachability: Reachability?
     init() {
         self.reachability = try? Reachability()
-        setup()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.setup()
+        }
     }
-    
+
     func setup() {
         try? reachability?.startNotifier()
         
         reachability?.whenReachable = {[weak self] reachability in
             
             switch reachability.connection {
-            case .cellular:
+            case .cellular, .wifi:
                 self?.fetch()
+
             default:
                 break
             }
