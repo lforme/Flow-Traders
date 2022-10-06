@@ -47,12 +47,12 @@ class HistoryViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.setNavigationBarHidden(false, animated: true)
-        title = "历史记录"
+        title = "History Task"
         
         setupUI()
         setupTableViewRefresh()
         
-        let backButton = UIBarButtonItem(title: "返回", style: .plain, target: self, action: #selector(goBack))
+        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(goBack))
         navigationItem.leftBarButtonItem = backButton
         navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.pixelFont(with: 14)], for: UIControl.State())
     }

@@ -10,20 +10,20 @@ import Foundation
 struct FileContent {
     
     static let content: [String: String] = [
-        "1": "输入help查看帮助",
+        "1": "Enter help to get more information",
         "help": """
-        如何创建任务:
+        How to create a task:
         -t 20201020 1022
-        -m 提醒我喝水 \n
-        如何查看任务:
+        -m reminds me to drink water \n
+        How to get task list:
         history \n
-        clearall 删除所有记录
+        clearall deletes all records
         """,
         "2": """
-        请输入任务名称:
+        Please enter a task name:
         """,
         "3": """
-        任务创建成功!☕️☕️☕️✅
+        Mission created successfully!☕️☕️☕️✅
         """,
     ]
 }

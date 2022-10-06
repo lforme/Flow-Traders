@@ -55,13 +55,13 @@ public class NormalFooter: MJRefreshAutoStateFooter {
     func refreshStyle() {
         label.isHidden = false
         label.textColor = UIColor(hex: "#111111")
-        label.text = "正在加载中..."
+        label.text = "Loading..."
     }
     
 
     func nomoreDataStyle() {
         label.isHidden = false
-        label.text = "- 已经到底啦 -"
+        label.text = "- no more data -"
         label.textColor = UIColor(hex: "#999999")
     }
 }
